@@ -717,3 +717,9 @@ iframe {
         font-size: 0.9rem;
     }
 }
+/* --- MASQUER LES FLÈCHES SUR ORDINATEUR --- */
+@media screen and (min-width: 1024px) {
+    .fleche-nav {
+        display: none !important; /* Cache les flèches uniquement sur les grands écrans */
+    }
+}
