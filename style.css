@@ -135,35 +135,35 @@ nav a {
     margin-top: 40px;
 }
 
-/* On force la galerie à glisser horizontalement sur PC aussi si elle dépasse */
+/* Force l'alignement horizontal sans retour à la ligne */
 .avis-container, .tarifs-container, .galerie-container {
     display: flex;
     gap: 25px;
     padding: 20px 10px 40px 10px;
     scroll-behavior: smooth;
-    justify-content: flex-start; /* Aligné à gauche pour le défilement */
-    flex-wrap: nowrap; /* Empêche les images de retourner à la ligne */
-    overflow-x: auto;  /* Active la barre de défilement horizontale */
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: auto;
 }
 
 /* Design de la barre de défilement pour les ordinateurs */
 .avis-container::-webkit-scrollbar, 
 .tarifs-container::-webkit-scrollbar, 
 .galerie-container::-webkit-scrollbar {
-    height: 8px; /* Épaisseur de la barre */
+    height: 8px;
 }
 
 .avis-container::-webkit-scrollbar-track,
 .tarifs-container::-webkit-scrollbar-track,
 .galerie-container::-webkit-scrollbar-track {
-    background: #16161a; /* Fond de la barre */
+    background: #16161a;
     border-radius: 10px;
 }
 
 .avis-container::-webkit-scrollbar-thumb,
 .tarifs-container::-webkit-scrollbar-thumb,
 .galerie-container::-webkit-scrollbar-thumb {
-    background: var(--barber-blue); /* Couleur bleue pour le style */
+    background: var(--barber-blue);
     border-radius: 10px;
 }
 
@@ -274,23 +274,6 @@ span {
 
 .galerie img:hover {
     transform: scale(1.03);
-}
-
-/* =========================
-   AVIS, TARIFS, GALERIE CONTAINER (SWIPE)
-========================= */
-#avis {
-    text-align: center;
-    margin-top: 40px;
-}
-
-.avis-container, .tarifs-container, .galerie-container {
-    display: flex;
-    gap: 25px;
-    padding: 20px 10px 40px 10px;
-    scroll-behavior: smooth;
-    justify-content: center;
-    flex-wrap: nowrap;
 }
 
 .avis {
@@ -559,7 +542,7 @@ iframe {
     }
 
     #infos-generales {
-        padding-top: 180px; /* Plus d'espace sur mobile car le menu empilé est plus haut */
+        padding-top: 180px; 
     }
 
     h1 {
@@ -570,7 +553,7 @@ iframe {
         font-size: 1.5rem;
     }
 
-    /* activation du swipe tactile horizontal */
+    /* Activation du swipe tactile horizontal */
     .avis-container, .tarifs-container, .galerie-container {
         flex-wrap: nowrap;
         overflow-x: auto;
@@ -586,7 +569,7 @@ iframe {
         scroll-snap-align: center;
     }
 
-    /* barres indicatives mobiles */
+    /* Barres indicatives mobiles */
     .avis-container::-webkit-scrollbar, 
     .tarifs-container::-webkit-scrollbar, 
     .galerie-container::-webkit-scrollbar {
@@ -616,8 +599,17 @@ iframe {
         width: 100%;
     }
 
-    .text-left-desktop {
-        text-align: center;
+    /* Centrage visuel propre sur mobile pour Nous Trouver et Contact */
+    .text-left-desktop, 
+    .adresse-texte, 
+    .transports-bloc, 
+    .transports-container {
+        text-align: center !important;
+    }
+
+    .transport-card p {
+        display: inline-block;
+        text-align: left; 
     }
 
     iframe {
@@ -636,10 +628,12 @@ iframe {
         font-size: 18px;
     }
 }
+
 .reseau.snapchat:hover {
-    color: #FFFC00; /* Le jaune officiel de Snapchat au survol */
+    color: #FFFC00; 
     text-shadow: 0 0 20px #FFFC00;
 }
+
 /* --- 🎛️ SYSTÈME DE FLÈCHES ET BARRE INTUITIVE --- */
 .slider-wrapper {
     position: relative;
@@ -650,12 +644,12 @@ iframe {
     align-items: center;
 }
 
-/* Style des petites flèches */
+/* Style de base des flèches */
 .fleche-nav {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: rgba(22, 22, 26, 0.9); /* Fond sombre de ton thème */
+    background: rgba(22, 22, 26, 0.9); 
     border: 1px solid var(--barber-blue);
     color: var(--pure-white);
     width: 40px;
@@ -680,36 +674,42 @@ iframe {
 .fleche-nav.gauche { left: 10px; }
 .fleche-nav.droite { right: 10px; }
 
-/* On s'assure que les containers ont un défilement tactile parfait sur mobile */
+/* ❌ SUPPRESSION DES FLÈCHES UNIQUEMENT SUR LA GALERIE ET LES AVIS */
+#galerie .fleche-nav, 
+#avis-section .fleche-nav {
+    display: none !important;
+}
+
+/* Défilement tactile parfait */
 .avis-container, .tarifs-container, .galerie-container {
     -webkit-overflow-scrolling: touch;
     padding-left: 20px;
     padding-right: 20px;
 }
 
-/* Modification des barres pour qu'elles ressemblent à de vraies barres de progression fixes */
+/* Look barres de progression */
 .avis-container::-webkit-scrollbar, 
 .tarifs-container::-webkit-scrollbar, 
 .galerie-container::-webkit-scrollbar {
-    height: 8px; /* Plus épaisse pour être vue direct */
-    display: block !important; /* Force l'affichage */
+    height: 8px;
+    display: block !important;
 }
 
 .avis-container::-webkit-scrollbar-track,
 .tarifs-container::-webkit-scrollbar-track,
 .galerie-container::-webkit-scrollbar-track {
-    background: #1f1f24; /* Un gris un peu plus clair pour dessiner la ligne complète */
+    background: #1f1f24; 
     border-radius: 10px;
 }
 
 .avis-container::-webkit-scrollbar-thumb,
 .tarifs-container::-webkit-scrollbar-thumb,
 .galerie-container::-webkit-scrollbar-thumb {
-    background: linear-gradient(90deg, var(--barber-blue), var(--barber-red)); /* Look tricolore stylé */
+    background: linear-gradient(90deg, var(--barber-blue), var(--barber-red)); 
     border-radius: 10px;
 }
 
-/* Masquer les flèches sur très petits écrans si le swipe suffit, ou les laisser pour l'accessibilité */
+/* Configuration des flèches sur petit écran pour les tarifs restants */
 @media screen and (max-width: 480px) {
     .fleche-nav {
         width: 35px;
@@ -717,9 +717,10 @@ iframe {
         font-size: 0.9rem;
     }
 }
-/* --- MASQUER LES FLÈCHES SUR ORDINATEUR --- */
+
+/* Masquer TOUTES les flèches sur ordinateur (car le défilement se fait à la souris/trackpad) */
 @media screen and (min-width: 1024px) {
     .fleche-nav {
-        display: none !important; /* Cache les flèches uniquement sur les grands écrans */
+        display: none !important; 
     }
 }
