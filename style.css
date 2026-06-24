@@ -640,3 +640,80 @@ iframe {
     color: #FFFC00; /* Le jaune officiel de Snapchat au survol */
     text-shadow: 0 0 20px #FFFC00;
 }
+/* --- 🎛️ SYSTÈME DE FLÈCHES ET BARRE INTUITIVE --- */
+.slider-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 1150px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+/* Style des petites flèches */
+.fleche-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(22, 22, 26, 0.9); /* Fond sombre de ton thème */
+    border: 1px solid var(--barber-blue);
+    color: var(--pure-white);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 1.1rem;
+    cursor: pointer;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.fleche-nav:hover {
+    background: var(--barber-red);
+    border-color: var(--barber-red);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.fleche-nav.gauche { left: 10px; }
+.fleche-nav.droite { right: 10px; }
+
+/* On s'assure que les containers ont un défilement tactile parfait sur mobile */
+.avis-container, .tarifs-container, .galerie-container {
+    -webkit-overflow-scrolling: touch;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Modification des barres pour qu'elles ressemblent à de vraies barres de progression fixes */
+.avis-container::-webkit-scrollbar, 
+.tarifs-container::-webkit-scrollbar, 
+.galerie-container::-webkit-scrollbar {
+    height: 8px; /* Plus épaisse pour être vue direct */
+    display: block !important; /* Force l'affichage */
+}
+
+.avis-container::-webkit-scrollbar-track,
+.tarifs-container::-webkit-scrollbar-track,
+.galerie-container::-webkit-scrollbar-track {
+    background: #1f1f24; /* Un gris un peu plus clair pour dessiner la ligne complète */
+    border-radius: 10px;
+}
+
+.avis-container::-webkit-scrollbar-thumb,
+.tarifs-container::-webkit-scrollbar-thumb,
+.galerie-container::-webkit-scrollbar-thumb {
+    background: linear-gradient(90deg, var(--barber-blue), var(--barber-red)); /* Look tricolore stylé */
+    border-radius: 10px;
+}
+
+/* Masquer les flèches sur très petits écrans si le swipe suffit, ou les laisser pour l'accessibilité */
+@media screen and (max-width: 480px) {
+    .fleche-nav {
+        width: 35px;
+        height: 35px;
+        font-size: 0.9rem;
+    }
+}
