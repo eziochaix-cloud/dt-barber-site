@@ -1,4 +1,4 @@
-  <!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght=300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
@@ -43,7 +43,7 @@
             Découvrez toutes les informations concernant Salon de coiffure DT BARBER qui se situe au Centre Commercial Plein Air, 192 Av. Charles Floquet, 93150 Le Blanc-Mesnil (93). Cette fiche inclut les photos, les horaires d'ouverture, l'adresse, le numéro de téléphone et les avis des clients.
         </p>
         
-        <a href="tel:0624114530"><button style="margin-top: 15px; font-size: 1.2rem;">Appeler le salon 📞</button></a>
+        <a href="tel:0766319408"><button style="margin-top: 15px; font-size: 1.2rem;">Appeler le salon 📞</button></a>
     </section>
 
     <section id="pourquoi-nous">
@@ -57,30 +57,42 @@
 
     <section id="prix">
         <h2>Nos Tarifs</h2>
-        <div class="tarifs tarifs-container">
-            <div class="carte">
-                <h3>Coupe Enfant</h3>
-                <span>7€</span>
+        <div class="slider-wrapper">
+            <button class="fleche-nav gauche" onclick="document.getElementById('tarifs-list').scrollBy({left: -280, behavior: 'smooth'})">❮</button>
+            
+            <div class="tarifs tarifs-container" id="tarifs-list">
+                <div class="carte">
+                    <h3>Coupe Enfant</h3>
+                    <span>7€</span>
+                </div>
+                <div class="carte">
+                    <h3>Coupe Homme</h3>
+                    <span>15€</span>
+                </div>
+                <div class="carte">
+                    <h3>Barbe + Cheveux</h3>
+                    <span>20€</span>
+                </div>
             </div>
-            <div class="carte">
-                <h3>Coupe Homme</h3>
-                <span>15€</span>
-            </div>
-            <div class="carte">
-                <h3>Barbe + Cheveux</h3>
-                <span>20€</span>
-            </div>
+
+            <button class="fleche-nav droite" onclick="document.getElementById('tarifs-list').scrollBy({left: 280, behavior: 'smooth'})">❯</button>
         </div>
     </section>
 
     <section id="galerie">
         <h2>Nos Réalisations</h2>
-        <div class="galerie galerie-container">
-            <img src="Coupe 2.png" alt="Réalisation 1">
-            <img src="Coupe 1.png" alt="Réalisation 2">
-            <img src="Coupe 3.png" alt="Réalisation 3">
-            <img src="Coupe 4.png" alt="Réalisation 4">
-            <img src="Coupe 5.png" alt="Réalisation 5">
+        <div class="slider-wrapper">
+            <button class="fleche-nav gauche" onclick="document.getElementById('galerie-list').scrollBy({left: -320, behavior: 'smooth'})">❮</button>
+            
+            <div class="galerie galerie-container" id="galerie-list">
+                <img src="Coupe 2.png" alt="Réalisation 1">
+                <img src="Coupe 1.png" alt="Réalisation 2">
+                <img src="Coupe 3.png" alt="Réalisation 3">
+                <img src="Coupe 4.png" alt="Réalisation 4">
+                <img src="Coupe 5.png" alt="Réalisation 5">
+            </div>
+
+            <button class="fleche-nav droite" onclick="document.getElementById('galerie-list').scrollBy({left: 320, behavior: 'smooth'})">❯</button>
         </div>
     </section>
 
@@ -104,62 +116,68 @@
 
     <section id="avis-section">
         <h2>Avis Clients</h2>
-        <div id="avis" class="avis-container">
-            <div class="avis">
-                <p>"Reactif sans rdv aimable professionnels"</p>
-                <div>
-                    <h4>Eden.a. ⭐⭐⭐⭐⭐</h4>
-                    <h5>11/09/2020</h5>
+        <div class="slider-wrapper">
+            <button class="fleche-nav gauche" onclick="document.getElementById('avis-list').scrollBy({left: -340, behavior: 'smooth'})">❮</button>
+            
+            <div class="avis-container" id="avis-list">
+                <div class="avis">
+                    <p>"Reactif sans rdv aimable professionnels"</p>
+                    <div>
+                        <h4>Eden.a. ⭐⭐⭐⭐⭐</h4>
+                        <h5>11/09/2020</h5>
+                    </div>
+                </div>
+
+                <div class="avis">
+                    <p>"Ambiance convivial, les coiffeurs au top , très bon conseiller . Je conseille à 200 pour 100 . Les prix sont plus que convenable."</p>
+                    <div>
+                        <h4>dimchesneau. ⭐⭐⭐⭐⭐</h4>
+                        <h5>16/09/2020</h5>
+                    </div>
+                </div>
+
+                <div class="avis">
+                    <p>"Superbe expérience au salon dt barber je trouve rien à redire a part que je suis extrêmement satisfait en particulier pour ma coupe."</p>
+                    <div>
+                        <h4>Bilal.n. ⭐⭐⭐⭐⭐</h4>
+                        <h5>26/09/2020</h5>
+                    </div>
+                </div>
+
+                <div class="avis">
+                    <p>"Super coiffeur je vais régulièrement chez eux"</p>
+                    <div>
+                        <h4>Best.u. ⭐⭐⭐⭐⭐</h4>
+                        <h5>20/03/2022</h5>
+                    </div>
+                </div>
+
+                <div class="avis">
+                    <p>"Service au top je vous les conseils j’y vais pour moi et mon fils tout les 2 semaine et je n’ai jamais été déçu de la qualité du travail !"</p>
+                    <div>
+                        <h4>Djalim.o. ⭐⭐⭐⭐⭐</h4>
+                        <h5>22/05/2022</h5>
+                    </div>
+                </div>
+
+                <div class="avis">
+                    <p>"Meilleur barber shop ! Parfait"</p>
+                    <div>
+                        <h4>gabriel.o. ⭐⭐⭐⭐⭐</h4>
+                        <h5>01/09/2022</h5>
+                    </div>
+                </div>
+
+                <div class="avis">
+                    <p>"Coiffeur très professionnel , très sociable je recommande fortement."</p>
+                    <div>
+                        <h4>Eray.a. ⭐⭐⭐⭐⭐</h4>
+                        <h5>08/05/2023</h5>
+                    </div>
                 </div>
             </div>
 
-            <div class="avis">
-                <p>"Ambiance convivial, les coiffeurs au top , très bon conseiller . Je conseille à 200 pour 100 . Les prix sont plus que convenable."</p>
-                <div>
-                    <h4>dimchesneau. ⭐⭐⭐⭐⭐</h4>
-                    <h5>16/09/2020</h5>
-                </div>
-            </div>
-
-            <div class="avis">
-                <p>"Superbe expérience au salon dt barber je trouve rien à redire a part que je suis extrêmement satisfait en particulier pour ma coupe."</p>
-                <div>
-                    <h4>Bilal.n. ⭐⭐⭐⭐⭐</h4>
-                    <h5>26/09/2020</h5>
-                </div>
-            </div>
-
-            <div class="avis">
-                <p>"Super coiffeur je vais régulièrement chez eux"</p>
-                <div>
-                    <h4>Best.u. ⭐⭐⭐⭐⭐</h4>
-                    <h5>20/03/2022</h5>
-                </div>
-            </div>
-
-            <div class="avis">
-                <p>"Service au top je vous les conseils j’y vais pour moi et mon fils tout les 2 semaine et je n’ai jamais été déçu de la qualité du travail !"</p>
-                <div>
-                    <h4>Djalim.o. ⭐⭐⭐⭐⭐</h4>
-                    <h5>22/05/2022</h5>
-                </div>
-            </div>
-
-            <div class="avis">
-                <p>"Meilleur barber shop ! Parfait"</p>
-                <div>
-                    <h4>gabriel.o. ⭐⭐⭐⭐⭐</h4>
-                    <h5>01/09/2022</h5>
-                </div>
-            </div>
-
-            <div class="avis">
-                <p>"Coiffeur très professionnel , très sociable je recommande fortement."</p>
-                <div>
-                    <h4>Eray.a. ⭐⭐⭐⭐⭐</h4>
-                    <h5>08/05/2023</h5>
-                </div>
-            </div>
+            <button class="fleche-nav droite" onclick="document.getElementById('avis-list').scrollBy({left: 340, behavior: 'smooth'})">❯</button>
         </div>
     </section>
 
@@ -169,15 +187,15 @@
         <div class="side-by-side-grid">
             <div class="grid-left">
                 <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2620.6462595680923!2d2.4422519412149017!3d48.9411790949957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66b0f31b62c55%3A0xc7db81fd2cfaa55!2sDT%20BARBER!5e0!3m2!1sfr!2sfr!4v1782147893091!5m2!1sfr!2sfr" 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2620.6473187287413!2d2.4422465769062064!3d48.94117911488188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66bc631b62d55%3A0x607db81fd3cf2a55!2sDT%20BARBER!5e0!3m2!1sfr!2sfr!4v1710000000000!5m2!1sfr!2sfr" 
                     style="border:0;" 
                     allowfullscreen="" 
                     loading="lazy" 
                     referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
                 <div class="itineraires">
-                    <a href="https://maps.app.goo.gl/vFLYT4gxVUbCcM139" class="bouton-itineraire">📍 Google Maps</a>
-                    <a href="https://ul.waze.com/ul?place=ChIJVSy2MQ9r5kcRVarP0h-4fQw&ll=48.94117560%2C2.44482150&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location" class="bouton-itineraire">🚗 Waze</a>
+                    <a href="https://maps.app.goo.gl/ChIJVSy2MQ9r5kcRVarP0h-4fQw" target="_blank" class="bouton-itineraire">📍 Google Maps</a>
+                    <a href="https://ul.waze.com/ul?place=ChIJVSy2MQ9r5kcRVarP0h-4fQw&ll=48.94117560%2C2.44482150&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location" target="_blank" class="bouton-itineraire">🚗 Waze</a>
                 </div>
             </div>
 
@@ -216,7 +234,7 @@
             <div class="grid-right">
                 <div class="bloc-appel-direct">
                     <h3><i class="fa-solid fa-phone-volume"></i> Ligne Directe</h3>
-                    <p class="tel-numero">07 66 31 94 08 </p>
+                    <p class="tel-numero">07 66 31 94 08</p>
                     <a href="tel:0766319408" class="bouton-appel-gros">Appeler le salon maintenant 📞</a>
                     <p class="note-envoi">Appel non surtaxé • Réponse immédiate</p>
                 </div>
@@ -224,7 +242,7 @@
         </div>
     </section>
 
-   <section id="reseaux">
+    <section id="reseaux">
         <h2>Suivez-nous</h2>
         <div class="reseaux-container">
             <a href="https://www.instagram.com/dt_barber.lbm?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="reseau instagram">
@@ -273,17 +291,3 @@
         </div>
 
         <div class="credits-footer">
-            <p style="font-size: 0.85rem; color: #666; margin-bottom: 5px;">
-                &copy; 2026 DT Barber Le Blanc-Mesnil. Tous droits réservés.
-            </p>
-            <p style="font-size: 0.9rem; color: #8c8c96;">
-                <a href="#mentions-legales" style="color: #8c8c96; text-decoration: none; margin-right: 15px;">Mentions Légales</a> | 
-                <span style="color: #ffffff; font-weight: normal; margin-left: 15px;">Site réalisé par <strong> Ezio Chaix</strong></span>
-            </p>
-        </div>
-    </section>
-
-    <a href="#" class="bouton-retour-haut">↑</a>
-
-</body>
-</html>
