@@ -4,35 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <meta name="description" content="Site officiel du salon DT Barber au Blanc-Mesnil. Réservez votre coupe ou barbe. Coiffeurs expérimentés pour tous types de cheveux afro, curly et lisses.">
-    <meta name="keywords" content="barber, coiffeur, Blanc-Mesnil, coupe homme, barbe, dégradé">
+    <meta name="description" content="Site officiel du salon DT Barber au Blanc-Mesnil. Salon de coiffure sans rendez-vous au Centre Commercial Plein Air. Coiffeurs expérimentés pour tous types de cheveux.">
+    <meta name="keywords" content="barber, coiffeur, Blanc-Mesnil, coupe homme, barbe, dégradé, sans rdv">
     
     <title>DT Barber</title>
     
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght=300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
     <nav>
-        <a href="#infos-generales">Accueil</a>
-        <a href="#prix">Tarifs</a>
-        <a href="#galerie">Galerie</a>
-        <a href="#avis-section">Avis</a>
-        <a href="#adresse">Nous trouver</a>
-        <a href="#reservation">Réservation</a>
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="logo.jpg" alt="DT Barber Logo">
+                <span>DT BARBER</span>
+            </div>
+            <div class="nav-links">
+                <a href="#infos-generales">Accueil</a>
+                <a href="#prix">Tarifs</a>
+                <a href="#galerie">Galerie</a>
+                <a href="#avis-section">Avis</a>
+                <a href="#adresse">Nous trouver</a>
+                <a href="#contact-infos">Contact</a>
+            </div>
+        </div>
     </nav>
 
     <section id="infos-generales">
+        <div class="hero-logo-container">
+            <img src="logo.jpg" alt="DT Barber Grand Logo" class="hero-logo">
+        </div>
         <h1>DT BARBER</h1>
         <p>
             Découvrez toutes les informations concernant Salon de coiffure DT BARBER qui se situe au Centre Commercial Plein Air, 192 Av. Charles Floquet, 93150 Le Blanc-Mesnil (93). Cette fiche inclut les photos, les horaires d'ouverture, l'adresse, le numéro de téléphone et les avis des clients.
         </p>
         
-        <a href="#reservation"><button style="margin-top: 15px; font-size: 1.2rem;">Prendre RDV 📅</button></a>
+        <a href="tel:0624114530"><button style="margin-top: 15px; font-size: 1.2rem;">Appeler le salon 📞</button></a>
     </section>
 
     <section id="pourquoi-nous">
@@ -46,7 +57,7 @@
 
     <section id="prix">
         <h2>Nos Tarifs</h2>
-        <div class="tarifs">
+        <div class="tarifs tarifs-container">
             <div class="carte">
                 <h3>Coupe Enfant</h3>
                 <span>7€</span>
@@ -64,10 +75,12 @@
 
     <section id="galerie">
         <h2>Nos Réalisations</h2>
-        <div class="galerie">
-            <img src="Coupe%20afro%20homme.jpg" alt="Réalisation 1">
-            <img src="Coupe%20curly%20homme.jpg" alt="Réalisation 2">
-            <img src="Coupe%20+%20barbe%20homme%20afro.jpg" alt="Réalisation 3">
+        <div class="galerie galerie-container">
+            <img src="Coupe 2.png" alt="Réalisation 1">
+            <img src="Coupe 1.png" alt="Réalisation 2">
+            <img src="Coupe 3.png" alt="Réalisation 3">
+            <img src="Coupe 4.png" alt="Réalisation 4">
+            <img src="Coupe 5.png" alt="Réalisation 5">
         </div>
     </section>
 
@@ -91,7 +104,7 @@
 
     <section id="avis-section">
         <h2>Avis Clients</h2>
-        <div id="avis">
+        <div id="avis" class="avis-container">
             <div class="avis">
                 <p>"Reactif sans rdv aimable professionnels"</p>
                 <div>
@@ -101,9 +114,7 @@
             </div>
 
             <div class="avis">
-                <p>
-                    "Ambiance convivial, les coiffeurs au top , très bon conseiller . Je conseille à 200 pour 100 . Les prix sont plus que convenable."
-                </p>
+                <p>"Ambiance convivial, les coiffeurs au top , très bon conseiller . Je conseille à 200 pour 100 . Les prix sont plus que convenable."</p>
                 <div>
                     <h4>dimchesneau. ⭐⭐⭐⭐⭐</h4>
                     <h5>16/09/2020</h5>
@@ -111,12 +122,42 @@
             </div>
 
             <div class="avis">
-                <p>
-                    "Superbe expérience au salon dt barber je trouve rien à redire a part que je suis extrêmement satisfait en particulier pour ma coupe."
-                </p>
+                <p>"Superbe expérience au salon dt barber je trouve rien à redire a part que je suis extrêmement satisfait en particulier pour ma coupe."</p>
                 <div>
                     <h4>Bilal.n. ⭐⭐⭐⭐⭐</h4>
                     <h5>26/09/2020</h5>
+                </div>
+            </div>
+
+            <div class="avis">
+                <p>"Super coiffeur je vais régulièrement chez eux"</p>
+                <div>
+                    <h4>Best.u. ⭐⭐⭐⭐⭐</h4>
+                    <h5>20/03/2022</h5>
+                </div>
+            </div>
+
+            <div class="avis">
+                <p>"Service au top je vous les conseils j’y vais pour moi et mon fils tout les 2 semaine et je n’ai jamais été déçu de la qualité du travail !"</p>
+                <div>
+                    <h4>Djalim.o. ⭐⭐⭐⭐⭐</h4>
+                    <h5>22/05/2022</h5>
+                </div>
+            </div>
+
+            <div class="avis">
+                <p>"Meilleur barber shop ! Parfait"</p>
+                <div>
+                    <h4>gabriel.o. ⭐⭐⭐⭐⭐</h4>
+                    <h5>01/09/2022</h5>
+                </div>
+            </div>
+
+            <div class="avis">
+                <p>"Coiffeur très professionnel , très sociable je recommande fortement."</p>
+                <div>
+                    <h4>Eray.a. ⭐⭐⭐⭐⭐</h4>
+                    <h5>08/05/2023</h5>
                 </div>
             </div>
         </div>
@@ -153,55 +194,44 @@
                 <div class="transports-bloc">
                     <h3><i class="fa-solid fa-bus"></i> Transports à proximité</h3>
                     <div class="transports-container">
-                        <div class="transport-card">
-                            <p><strong>🚏 Victoire</strong> (Ligne 607) - 3 min à pied</p>
-                        </div>
-                        <div class="transport-card">
-                            <p><strong>🚏 Iqbal Masih</strong> (Ligne 620) - 5 min à pied</p>
-                        </div>
-                        <div class="transport-card">
-                            <p><strong>🚉 Gare de Drancy</strong> (RER B) - 18 min à pied</p>
-                        </div>
+                        <div class="transport-card"><p><strong>🚏 Victoire</strong> (Ligne 607) - 3 min à pied</p></div>
+                        <div class="transport-card"><p><strong>🚏 Iqbal Masih</strong> (Ligne 620) - 5 min à pied</p></div>
+                        <div class="transport-card"><p><strong>🚉 Gare de Drancy</strong> (RER B) - 18 min à pied</p></div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="reservation">
-        <h2>Prendre Rendez-vous</h2>
+    <section id="contact-infos">
+        <h2>Contact & Affluence</h2>
         
         <div class="side-by-side-grid">
             <div class="grid-left text-left-desktop">
-                <h3>Planifiez votre visite</h3>
-                <p>
-                    Besoin d'une coupe fraîche ou d'une taille de barbe ? Choisissez la méthode qui vous convient le mieux. 
-                </p>
-                <p>Vous pouvez descendre directement sur le formulaire ou nous appeler en un clic pour réserver immédiatement.</p>
-                
-                <div class="reservation-boutons">
-                    <a href="#formulaire-contact"><button>Réserver en ligne 📅</button></a>
-                    <a href="tel:0624114530" class="bouton-itineraire">Appeler le salon 📞</a>
-                </div>
+                <h3>Passez quand vous voulez !</h3>
+                <p>Le salon fonctionne <strong>exclusivement sans rendez-vous</strong>. Installez-vous confortablement, on s'occupe de vous dans les plus brefs délais.</p>
+                <p>Une question sur l'attente actuelle ou besoin d'un renseignement précis ? Nos coiffeurs vous répondent directement au téléphone.</p>
             </div>
 
             <div class="grid-right">
-                <form id="formulaire-contact">
-                    <input type="text" placeholder="Votre nom" required><br>
-                    <input type="email" placeholder="Votre email" required><br>
-                    <textarea placeholder="Votre message ou horaire souhaité" required></textarea><br>
-                    <button type="submit">Envoyer le message</button>
-                </form>
-                <p class="note-envoi">Nous vous répondrons au plus vite !</p>
+                <div class="bloc-appel-direct">
+                    <h3><i class="fa-solid fa-phone-volume"></i> Ligne Directe</h3>
+                    <p class="tel-numero">07 66 31 94 08 </p>
+                    <a href="tel:0766319408" class="bouton-appel-gros">Appeler le salon maintenant 📞</a>
+                    <p class="note-envoi">Appel non surtaxé • Réponse immédiate</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="reseaux">
+   <section id="reseaux">
         <h2>Suivez-nous</h2>
         <div class="reseaux-container">
             <a href="https://www.instagram.com/dt_barber.lbm?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="reseau instagram">
                 <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.snapchat.com/add/dtbarber.lbm" target="_blank" class="reseau snapchat">
+                <i class="fa-brands fa-snapchat"></i>
             </a>
             <a href="https://www.tiktok.com/@dtbarber?is_from_webapp=1&sender_device=pc" target="_blank" class="reseau tiktok">
                 <i class="fa-brands fa-tiktok"></i>
@@ -210,53 +240,50 @@
     </section>
 
     <section id="horaires-bande">
-        <h2>Horaires d'Ouverture</h2>
-        
+        <h2>Horaires d'ouverture</h2>
         <div class="grille-horaires">
             <div class="colonne-jour">
                 <h3>Lun</h3>
-                <p>10h00</p><p>-</p><p>20h00</p>
+                <p>09:00</p><p>20:00</p>
             </div>
             <div class="colonne-jour">
                 <h3>Mar</h3>
-                <p>10h00</p><p>-</p><p>20h00</p>
+                <p>09:00</p><p>20:00</p>
             </div>
             <div class="colonne-jour">
                 <h3>Mer</h3>
-                <p>10h00</p><p>-</p><p>20h00</p>
+                <p>09:00</p><p>20:00</p>
             </div>
             <div class="colonne-jour">
                 <h3>Jeu</h3>
-                <p>10h00</p><p>-</p><p>20h00</p>
+                <p>09:00</p><p>20:00</p>
             </div>
             <div class="colonne-jour">
                 <h3>Ven</h3>
-                <p>10h00</p><p>-</p><p>20h00</p>
+                <p>09:00</p><p>20:00</p>
             </div>
             <div class="colonne-jour">
                 <h3>Sam</h3>
-                <p>10h00</p><p>-</p><p>20h00</p>
+                <p>09:00</p><p>20:00</p>
             </div>
             <div class="colonne-jour dimanche">
                 <h3>Dim</h3>
-                <p>09h30</p><p>-</p><p>12h20</p>
+                <p>Fermé</p>
             </div>
         </div>
 
         <div class="credits-footer">
-            <p>© 2026 DT Barber</p>
-            
-            <div style="margin: 15px 0; font-size: 0.75rem; opacity: 0.6; line-height: 1.5;">
-                <p><strong>Mentions Légales :</strong> DT Barber, 192 Av. Charles Floquet, 93150 Le Blanc-Mesnil.<br> Hébergement du site : GitHub Pages.</p>
-            </div>
-            
-            <p>Site réalisé avec de l'<strong>aura</strong></p>
+            <p style="font-size: 0.85rem; color: #666; margin-bottom: 5px;">
+                &copy; 2026 DT Barber Le Blanc-Mesnil. Tous droits réservés.
+            </p>
+            <p style="font-size: 0.9rem; color: #8c8c96;">
+                <a href="#mentions-legales" style="color: #8c8c96; text-decoration: none; margin-right: 15px;">Mentions Légales</a> | 
+                <span style="color: #ffffff; font-weight: normal; margin-left: 15px;">Site réalisé par <strong> Ezio Chaix</strong></span>
+            </p>
         </div>
     </section>
 
-    <a href="#" class="bouton-retour-haut" title="Remonter en haut">
-        <i class="fa-solid fa-arrow-up"></i>
-    </a>
+    <a href="#" class="bouton-retour-haut">↑</a>
 
 </body>
 </html>
